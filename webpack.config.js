@@ -74,7 +74,7 @@ module.exports = {
                 test: require.resolve('jquery'),
                 loader: 'expose-loader',
                 options: {
-                    exposes: ['$', 'jquery'],
+                    exposes: ['$', 'jQuery'],
                 }
             },
         ]
@@ -83,6 +83,31 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "product.html",
+            template: "./src/product.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "checkout.html",
+            template: "./src/checkout.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "payment.html",
+            template: "./src/payment.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "search.html",
+            template: "./src/search.html",
+        }),
+
+        new HtmlWebpackPlugin({
+            filename: "contact.html",
+            template: "./src/contact.html",
         }),
 
         new MiniCssExtractPlugin({
